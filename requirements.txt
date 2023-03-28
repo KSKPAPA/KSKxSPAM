@@ -4,5 +4,5 @@ cryptg==0.4.0
 heroku3==5.2.0
 sqlalchemy==1.3.20
 psycopg2==2.9.5
-gitpython==3.1.31
+gitpython
 asyncio==3.4.3
