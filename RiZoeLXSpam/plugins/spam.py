@@ -48,12 +48,12 @@ async def spam(e):
             message = str(Rizoel[1])
             counter = int(Rizoel[0])
             if counter > 100:
-                return await e.reply(error)
+                return await e.reply(error, parse_mode=None, link_preview=None)
             await asyncio.wait([e.respond(message) for i in range(counter)])
         elif e.reply_to_msg_id and smex.media:
             counter = int(Rizoel[0])
             if counter > 100:
-                return await e.reply(error)
+                return await e.reply(error, parse_mode=None, link_preview=None)
             for _ in range(counter):
                 smex = await e.client.send_file(e.chat_id, smex, caption=smex.text)
                 await gifspam(e, smex)
@@ -61,7 +61,7 @@ async def spam(e):
             message = smex.text
             counter = int(Rizoel[0])
             if counter > 100:
-                return await e.reply(error)
+                return await e.reply(error, parse_mode=None, link_preview=None)
             await asyncio.wait([e.respond(message) for i in range(counter)])
         else:
-            await e.reply(usage)
+            await e.reply(usage, parse_mode=None, link_preview=None)
